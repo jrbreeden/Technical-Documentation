@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>JavaScript Documentation</title>
+</head>
+
+
+<body>
+    <nav id="navbar">
+        <header>JavaScript Documentation</header>
+        <ul>
+            <li>
+                <a class="nav-link" href="#Getting_Started_with_JavaScript">Getting Started with JavaScript</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#JavaScript_Entry_Point">JavaScript Entry Point</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Printing_to_the_console">Printing to the console</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Declaring_Functions">Declaring Functions</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Object_Oriented_Programming">Object Oriented Programming</a>
+            </li>
+        </ul>
+    </nav>
+    <main id="man-doc">
+        <section class="main-section" id="Getting_Started_with_JavaScript">
+            <header>Getting Started with JavaScript</header>
+            <p>Steps for getting started</p>
+            <ol>
+                <li>Install the latest version of Node.js</li>
+                <li>Install an Integrated Devlepomental Environment (IDE)</li>
+                <li>In VS Code, create a file
+                <li>Write JS code, save it with .js extension</li>
+                <li>Open up the terminal</li>
+                <li>Navigate to the file location</li>
+                <li>Type node hello.js and hit enter</li>
+            </ol>
+        </section>
+        <section class="main-section" id="JavaScript_Entry_Point">
+            <header>JavaScript Entry Point</header>
+            <p>The entry point to a JavaScript application is the first line of code from an interpreted file.</p>
+            <p>It declares a function then runs it.
+            </p>
+            <pre>
+                <code>
+                    function(){
+                        //functions, variables, etc. 
+                        return exports;
+                    }();
+                </code>
+            </pre>
+            <p>JavaScript variables are declared in the scope of the function, so different modules do not share names.</p>
+            <p>JavaScript does not does not need a package keyword.</p>
+        </section>
+        <section class="main-section" id="Printing_to_the_console">
+            <header>Printing to the console</header>
+            <p>To print to the console, we use console.log(text).</p>
+            <p>This prints the variables inside the log.</p>
+            <pre>
+                <code>
+                    console.log("Hello World")
+                </code>
+            </pre>
+            <p>
+                In this example, we are printing "Hello World" to the console when we run the program.
+            </p>
+        </section>
+        <section class="main-section" id="Declaring_Functions">
+            <header>Declaring Functions</header>
+            <p>Functions are essential building blocks in JavaScript. Here is an example of how to declare a function in JavaScript.
+            </p>
+            <p>Some code to copy:</p>
+            <pre>
+                <code>
+                    // Function to compute the product of p1 and p2
+                    function myFunction(p1, p2) {
+                      return p1 * p2;
+                    }
+                </code>
+            </pre>
+        </section>
+        <section class="main-section" id="Object_Oriented_Programming">
+            <header>Object Oriented Programming</header>
+            <p>JavaScript is a prototype-based object oriented langauage.</p>
+            <p>This means that has no classes like other object oriented langauages.</p>
+            <p>An example of this might be an inheritance that inherits objects instead of classes.
+            </p>
+            <pre>
+                <code>
+                    //Inheritance example
+                    class Airplane {
+                      constructor(name) {
+                        this.name = name;
+                      }
+                      //method to return the string
+                      toString() {
+                        return (`Name of the airplane: {this.name}`);
+                      }
+                    }
+                    the class company extends Airplane {
+                      constructor(name, color) {
+                        //super keyword - refer to the immediate Airplane's class (parent's class) instance variable. 
+                        super(name);
+                        this.color = color;
+                      }
+                      toString() {
+                        return (`{super.toString()},company color: {this.color}`);
+                      }
+                    }
+                    let company1 = new company('Boeing 737', 'White');
+                    console.log(company1.toString());
+                    //Name of the airplane: Boeing 737, color: White 
+                </code>
+            </pre>
+            <p>We use this object by doing the following:</p>
+            <pre>
+                <code>
+                    Airplane = new Airplane("Boeing 737");
+                    String Boeing 737name = name();
+                </code>
+            </pre>
+        </section>
+        <footer>
+            <p>Documentation brought to you by Joanna Breeden</p>
+        </footer>
+    </main>
+</body>
+
+</html>
